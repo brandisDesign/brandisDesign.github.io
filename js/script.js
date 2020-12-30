@@ -40,68 +40,7 @@ $(function () {
     =====================*/
     const modalCall = $("[data-modal]");
     const modalClose = $("[data-close]");
-    // const portfolio = document.querySelector('.portfolio');
-    // const portfolioColLast = document.querySelectorAll('.portfolio__col.last');
-
-
-    // const workNav = document.querySelector('.works__nav');
-    // let count = 0;
-    // let count2 = 0;
-
-    // const randomNumber = () => {
-    //     return Math.floor(Math.random() * 2);
-    // };
-
-    // const activeLastCard = (number) => {
-    //     portfolioColLast[number].classList.add('hide');
-    // };
-    // activeLastCard(randomNumber());
-
-    // const onClickNav = (evt) => {
-    //     const target = evt.target;
-    //     if (target && target.getAttribute('data-filter') == 'website' && count < 1) {
-    //         createElementCard('website','img/landingZaglushka.jpg');
-    //         createElementCard('website','img/landingZaglushka1.jpg');
-    //         count = +1;
-    //     }
-    //     if (target && target.getAttribute('data-filter') == 'interaction' && count2 < 1) {
-    //         createElementCard('interaction','img/landingZaglushka.jpg');
-    //         count2 = +1;
-    //     }
-    //     if (target && target.getAttribute('data-filter') == 'all' || target.getAttribute('data-filter') == 'logo') {
-    //         if (target.getAttribute('data-filter') == 'all') {
-    //             // activeLastCard(randomNumber());
-    //         }
-    //         const del = document.querySelectorAll('.created');
-    //         del.forEach(item => item.remove());
-    //         count = 0;
-    //         count2 = 0;
-    //     }
-    // };
-
-    // workNav.addEventListener('click', onClickNav);
-
-
-    // const createElementCard = (category,img) => {
-    //     const element = document.createElement('div');
-    //     element.classList.add('portfolio__col');
-    //     element.setAttribute('data-cat', category);
-    //     element.innerHTML =
-    //         ` <div class="work">
-    //     <img class="work__image" src="${img}" alt="example of design">
-    //     <div class="work__content">
-    //       <div class="work__cat">category: ${category}</div>
-    //       <div class="work__title">
-    //         в разработке
-    //         <time class="work__date" datetime="2019-11-22 19:00">soon</time>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>`;
-    //     element.classList.add('created');
-    //     portfolio.append(element);
-    // };
-
+   
 
 
     modalCall.on("click", function (event) {
@@ -189,15 +128,13 @@ $(function () {
     });
 
     worksSlider2.slick({
-        // infinite: true,
+      
         slidesToShow: 3,
         slidesToScroll: 3,
-        // fade: true,
+      
         arrows: false,
         dots: true,
-        // autoplay: true,
-        // autoplaySpeed: 10000,
-        // asNavFor: worksSlider3
+       
         responsive: [
             {
                 breakpoint: 1024,
@@ -219,11 +156,7 @@ $(function () {
         ]
     });
 
-    worksSlider3.slick({
-        arrows: false,
-        dots: false,
-        // asNavFor: worksSlider2
-    });
+  
 
 
 
